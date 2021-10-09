@@ -1,13 +1,28 @@
+.main {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 5%;
+}
+
+.main img {
+  width: 40%;
+  margin-bottom: 0;
+  margin: 0 auto;
+}
+
 #goals {
-  width: 35rem;
+  width: 100%;
   max-width: 90%;
-  margin: 3rem auto;
+  margin: 0 auto;
 }
 
 #goal-form {
-  width: 30rem;
+  width: 100%;
   max-width: 90%;
-  margin: 3rem auto;
+  margin: 0 auto;
   padding: 2rem;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
   border-radius: 10px;

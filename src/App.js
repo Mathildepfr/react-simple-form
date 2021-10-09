@@ -3,11 +3,15 @@ import React, { useState } from 'react';
 import CourseGoalList from './components/CourseGoals/CourseGoalList/CourseGoalList';
 import CourseInput from './components/CourseGoals/CourseInput/CourseInput';
 import './App.css';
+import illuPerso from './assets/illu.png';
 
 const App = () => {
   const [courseGoals, setCourseGoals] = useState([
     { text: 'Do all exercises!', id: 'g1' },
-    { text: 'Finish the course!', id: 'g2' }
+    { text: 'Finish the course!', id: 'g2' },
+    { text: 'New course on Udemy!', id: 'g3' },
+    { text: 'Flashcards today!', id: 'g4' },
+    { text: 'Push on GitHub!', id: 'g5' }
   ]);
 
   const addGoalHandler = enteredText => {
@@ -36,7 +40,8 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div className='main'>
+      <img src={illuPerso} alt='A person multi-tasking' />
       <section id="goal-form">
         <CourseInput onAddGoal={addGoalHandler} />
       </section>
